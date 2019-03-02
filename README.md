@@ -1,6 +1,9 @@
-# NCAA2k19Predictions
+# Predicting NCAA March Madness
 UW INFO 370: Introduction to Data Science 
+
 Final Project 2019
+
+Krishna Puvvada, Travis Neils, Zach Palmer, Paul Winebrenner
 
 
 ## Project Description
@@ -45,8 +48,9 @@ H0: There is no relationship between a team&#39;s regular season stats or seedin
 
 HA: There is a relationship between a team&#39;s regular season statistics or seeding and the result of their games in the NCAA Tournament.
 
-**Datasets
-       ** The following sources is where we will be grabbing the data that is necessary for our exploration:
+**Datasets** 
+
+The following sources is where we will be grabbing the data that is necessary for our exploration:
 
 [Season Results] ([http://web1.ncaa.org/stats/StatsSrv/rankings?doWhat=archive&amp;rpt=archive&amp;sportCode=MBB](http://web1.ncaa.org/stats/StatsSrv/rankings?doWhat=archive&amp;rpt=archive&amp;sportCode=MBB))
 
