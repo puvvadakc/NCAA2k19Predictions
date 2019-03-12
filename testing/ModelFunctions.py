@@ -82,10 +82,23 @@ def BayesianRidgeFunc(train_features, train_outcome):
     """This function takes in a set of train features and outcomes and runs a Bayesian Ridge Regression through a pipelines
     and grid search of multiple variations. Pipeline run with Imputer to fill in missing values and SelectKBest as the feature 
     selection method. The function returns the fitted most optimal prediction model from the grid search conducted."""
-    clf = BayesianRidge()
-    imputer = Imputer()
+    scaler = MinMaxScaler()
+    mlp_reg = BayesianRidge()
     param_grid = {}
-    pipe = make_pipeline(imputer, MinMaxScaler(),SelectKBest(), clf)
-    grid = GridSearchCV(pipe, param_grid, scoring="neg_mean_absolute_error")
+    pipe = make_pipeline(scaler, mlp_reg)
+    grid = GridSearchCV(pipe, param_grid)
+    grid.fit(train_features, train_outcome)
+    return grid
+
+
+def LinearRegFunc(train_features, train_outcome):
+    """This function takes in a set of train features and outcomes and runs a Linear Regression through a pipelines
+    and grid search of multiple variations. Pipeline run with Imputer to fill in missing values and SelectKBest as the feature 
+    selection method. The function returns the fitted most optimal prediction model from the grid search conducted."""
+    scaler = MinMaxScaler()
+    mlp_reg = LinearRegression()
+    param_grid = {}
+    pipe = make_pipeline(scaler, mlp_reg)
+    grid = GridSearchCV(pipe, param_grid)
     grid.fit(train_features, train_outcome)
     return grid
