@@ -5,7 +5,7 @@ Final Project 2019
 
 Krishna Puvvada, Travis Neils, Zach Palmer, Paul Winebrenner
 
-Resource Link: 
+Resource Link: [https://puvvadakc.github.io/NCAA2k19Predictions/](https://puvvadakc.github.io/NCAA2k19Predictions/)
 
 ## Project Description
 
