@@ -5,6 +5,7 @@ Final Project 2019
 
 Krishna Puvvada, Travis Neils, Zach Palmer, Paul Winebrenner
 
+Resource Link: 
 
 ## Project Description
 
@@ -126,5 +127,31 @@ Also since sports predicting comes with super high variability we anticipate tha
 **Files**
 
 data_unprep Folder:
-- Stores raw data csv files of rankings and scores
-- 
+- Stores raw data csv files of rankings and scores.
+- Contains possible data we were considering when constructing our model
+
+data Folder:
+- Contians csv files for the multiple stages of preperation of data.
+- All stats and information of regular season and post season from seeding, slots, results, scores, and game stats
+
+DataExploration.ipynb:
+- Contains all initial data preperation and analysis of initial selection of features. 
+- Contains code for visualizations of initial exploration such as correlation maps, and analysing losing and winning teams seperately.
+
+DataPrepModellingProcess1.ipynb & DataPrepModellingProcess2.ipynb:
+- These files contain numerous runs with numerous ways of preping and aggregating data.
+- We constructed close two four different methods of modelling our predictions off of the data we had.
+- Each model was flawed until the final section of code in DataPrepModellingProcess2. Which is the model we stuck to.
+- In this method, we aggregated each team's average season stats in a game into aveage differences scores for each stat such as Points Allowed, or Steals. These aggreage features are used to predict score difference of the teams, a positive value meaning Team 1 wins, a negative value meaning Team 2 wins. 
+
+ModelFunctions.py: 
+- Contains all the functions for the models we used for the exploration. Using the method we decided upon near the end of DataPrepModellingProcess2.ipynb file, we constructed these functions to run through the prepped data.
+
+PredictionVisualizationPrep.ipynb:
+- Contains code that runs all the models with the prepped data and gets all the predictions and scores of each model and creates visualizations comparing them with actual outcomes of the 2018 march madness season.
+
+Resource.ipynb:
+- Main file where the Resource is written, when full notebook is compiled, an index.html file is generated in the directory containing the full Resource of the Exploration.
+
+report.tpl:
+- File necessary for the compilation of the index.html file in Resource.ipynb
