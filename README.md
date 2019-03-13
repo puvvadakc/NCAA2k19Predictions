@@ -122,3 +122,9 @@ One of the main things we will focus on is making sure that our algorithms are n
 We will need to research and keep track of the differences in game play within the preseason, season, and postseason, since coaching changes, and the variables to keep track of for efficiency of game winning, might change for different parts of the basketball season. We will have to do detailed research on each covariate in our data to see how the they each trend with game winning. We may also need to conduct separate statistical analyses to determine optimal ranges. With games having so many different aspects that can dictate the outcome, we will have to consider many covariates within our model for prediction, like fouling, scoring, defense, game clock, and injuries.
 
 Also since sports predicting comes with super high variability we anticipate that we will be facing a lot of challenges on accuracy in this exploration. In order to predict a full 62 game March Madness, with a proper accuracy we would need achieve a very high probability prediction. Even with a 90% probability of predicting games accurately, we would still only achieve a .15% probability of predicting all 62 games on the bracket accurately. With a 99% probability
+
+**Files**
+
+data_unprep Folder:
+- Stores raw data csv files of rankings and scores
+- 
